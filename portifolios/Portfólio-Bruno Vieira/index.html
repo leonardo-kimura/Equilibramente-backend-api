@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio Bruno Vieira</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <div class="logo">BV</div>
+                <div>
+                    <h1>Bruno Vieira</h1>
+                    <div style="font-size:12px;color:var(--muted)">Desenvolvedor Web</div>
+                </div>
+            </div>
+            <nav>
+                <a href="#projetos">Projetos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="intro">
+                    <h2>Olá, eu sou Bruno — eu crio interfaces limpas e experiências digitais memoráveis.</h2>
+                    <p>Transformo ideias em sites rápidos e acessíveis. Trabalho com HTML, CSS moderno, JavaScript e
+                        frameworks como React. Aqui estão alguns projetos que mostram meu trabalho.</p>
+                    <div class="cta">
+                        <a href="#projetos"><button class="btn">Ver projetos</button></a>
+                    </div>
+                </div>
+
+                <aside class="profile-card">
+                    <img src="./img/perfil.jpeg" alt="perfil" class="perfil" />
+                    <h3>Bruno Vieira</h3>
+                    <p>Front‑end Developer com foco em interfaces responsivas e performance. Gosto de resolver problemas
+                        complexos com soluções simples e elegantes.</p>
+                    <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Laravel</span>
+                    </div>
+                </aside>
+            </section>
+
+            <section id="projetos" class="projects">
+                <h3 style="margin-bottom:12px">Projetos</h3>
+                <div class="projects-grid">
+                    <article class="project">
+                        <div class="thumb">Projeto Loja • UI</div>
+                        <h4>Loja de Roupas (UI)</h4>
+                        <p>Design de e‑commerce com foco em conversão e navegação rápida.</p>
+                        <div class="tags"><span class="tag">Figma</span><span class="tag">HTML</span><span
+                                class="tag">CSS</span></div>
+                    </article>
+
+                    <article class="project">
+                        <div class="thumb">Calendario</div>
+                        <h4>Calendario anual</h4>
+                        <p>Exibe os meses e dias dinamicamente, com destaque para o dia atual e navegação simples entre
+                            meses.</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span
+                                class="tag">PHP</span></div>
+                    </article>
+
+                    <article class="project">
+                        <div class="thumb">Galeria</div>
+                        <h4>Galeria Responsiva</h4>
+                        <p>Galeria com layout em grid responsivo e modal para visualização.</p>
+                        <div class="tags"><span class="tag">CSS Grid</span><span class="tag">JS</span></div>
+                    </article>
+
+                    <article class="project">
+                        <div class="thumb">Calculadora</div>
+                        <h4>Calculadora de Consumo</h4>
+                        <p>App simples para calcular consumo energético mensal (CRUD).</p>
+                        <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="sobre" style="margin-top:28px">
+                <h3>Sobre mim</h3>
+                <p style="color:var(--muted);max-width:70%">Sou estudante/desenvolvedor web formado pelo SENAI e
+                    atualmente curso Sistemas de Informação na Unoest. Trabalho em projetos desde protótipo até a
+                    implementação final,
+                    sempre com atenção à performance e ao detalhe.</p>
+            </section>
+
+            <section id="contato" class="contact">
+                <form>
+                    <h4>Vamos conversar?</h4>
+                    <label for="nome">Seu nome</label>
+                    <input id="nome" placeholder="Seu nome" />
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="seu@exemplo.com" />
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" placeholder="Me conte sobre o projeto..."></textarea>
+
+                    <div style="margin-top:12px"><button class="btn" type="button">Enviar mensagem</button></div>
+                </form>
+
+                <div class="profile-card" style="display:flex;flex-direction:column;justify-content:center;gap:10px">
+                    <div>
+                        <strong>Email</strong>
+                        <div style="color:var(--muted);">bruno@email.com</div>
+                    </div>
+                    <div>
+                        <strong>Localização</strong>
+                        <div style="color:var(--muted);">São Paulo, Brasil</div>
+                    </div>
+                    <div>
+                        <strong>Links</strong>
+                        <div style="color:var(--muted);">GitHub • LinkedIn • Behance</div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="footer">
+                <div>© <span id="ano"></span> Bruno Vieira</div>
+                <div style="color:var(--muted)">2025</div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

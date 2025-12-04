@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+   font-family: "Inter", sans-serif;
+   margin: 0px;
+}
+
+.container-voluntario {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.cabeçalho{
+  height: 30px;
+}
+.opcoes .opcao.ativo {
+      background-color: #007bff;
+      color: white;
+      border-color: #007bff;
+}
+.formulario-voluntario {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.titulo-principal {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.bloco-formulario {
+  margin-bottom: 30px;
+}
+
+.titulo-bloco {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.linha-formulario {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.campo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-color: #030303;
+
+}
+
+
+.opcoes {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.opcao {
+  padding: 8px 16px;
+  border: 1px solid #9aa7bb;
+  background: #fff;
+  color: #3b4f70;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.opcao:hover {
+  background: #020508;
+  color: #fff;
+}
+
+
+.botao-enviar {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #10141b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-enviar:hover {
+  background: #041c4e;
+}

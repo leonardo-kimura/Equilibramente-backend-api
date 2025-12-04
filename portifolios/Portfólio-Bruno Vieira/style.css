@@ -1,0 +1,257 @@
+ :root {
+     --bg: #f5f5f5;
+     --card: #ffffff;
+     --muted: #555;
+     --accent1: #2563eb;
+     --accent2: #3b82f6;
+     --glass: rgba(0, 0, 0, 0.04);
+     --radius: 16px;
+     color-scheme: light;
+ }
+
+ * {
+     box-sizing: border-box
+ }
+
+ html,
+ body {
+     height: 100%
+ }
+
+ body {
+     margin: 0;
+     font-family: Inter, system-ui, Arial, Helvetica, sans-serif;
+     background: var(--bg);
+     color: #1a1a1a;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     line-height: 1.5;
+     padding: 48px 24px;
+ }
+
+ .container {
+     max-width: 1100px;
+     margin: 0 auto
+ }
+
+ header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 40px
+ }
+
+ .brand {
+     display: flex;
+     gap: 14px;
+     align-items: center
+ }
+
+ .logo {
+     width: 56px;
+     height: 56px;
+     border-radius: 12px;
+     display: grid;
+     place-items: center;
+     background: linear-gradient(135deg, var(--accent1), var(--accent2));
+     font-weight: 800;
+     color: white
+ }
+
+ .brand h1 {
+     font-size: 18px;
+     margin: 0
+ }
+
+ nav {
+     display: flex;
+     gap: 14px
+ }
+
+ nav a {
+     color: var(--muted);
+     text-decoration: none;
+     font-weight: 600;
+     padding: 8px 12px;
+     border-radius: 10px
+ }
+
+ nav a:hover {
+     background: var(--glass);
+     color: #000
+ }
+
+ .hero {
+     display: grid;
+     grid-template-columns: 1fr 380px;
+     gap: 28px;
+     align-items: center;
+     margin-bottom: 36px
+ }
+
+ .intro h2 {
+     margin: 0 0 8px;
+     font-size: 36px
+ }
+
+ .intro p {
+     margin: 0 0 18px;
+     color: var(--muted);
+     max-width: 70%
+ }
+
+ .cta {
+     display: flex;
+     gap: 12px
+ }
+
+ .btn {
+     background: linear-gradient(90deg, var(--accent1), var(--accent2));
+     border: none;
+     padding: 12px 18px;
+     border-radius: 12px;
+     color: white;
+     font-weight: 700;
+     cursor: pointer
+ }
+
+ .btn.secondary {
+     background: transparent;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+     color: var(--muted);
+     font-weight: 600
+ }
+
+ .profile-card {
+     background: var(--card);
+     padding: 20px;
+     border-radius: 16px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08)
+ }
+
+ .perfil {
+     width: 100%;
+     height: 320px;
+     border-radius: 12px;
+     object-fit: cover;
+     background: var(--accent1);
+     display: block
+ }
+
+ .profile-card h3 {
+     margin: 12px 0 6px
+ }
+
+ .profile-card p {
+     color: var(--muted);
+     margin: 0;
+     font-size: 14px
+ }
+
+ section.projects {
+     margin-top: 24px
+ }
+
+ .projects-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+     gap: 18px
+ }
+
+ .project {
+     background: var(--card);
+     padding: 16px;
+     border-radius: 14px;
+     border: 1px solid rgba(0, 0, 0, 0.05);
+     transition: transform .28s, box-shadow .28s
+ }
+
+ .project:hover {
+     transform: translateY(-6px);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15)
+ }
+
+ .project .thumb {
+     height: 140px;
+     border-radius: 10px;
+     overflow: hidden;
+     background: rgba(37, 99, 235, 0.1);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: 700;
+     color: #333
+ }
+
+ .project h4 {
+     margin: 12px 0 6px
+ }
+
+ .project p {
+     margin: 0;
+     color: var(--muted);
+     font-size: 14px
+ }
+
+ .tags {
+     display: flex;
+     gap: 8px;
+     margin-top: 10px;
+     flex-wrap: wrap
+ }
+
+ .tag {
+     font-size: 12px;
+     padding: 6px 8px;
+     border-radius: 999px;
+     background: rgba(0, 0, 0, 0.05);
+     color: var(--muted)
+ }
+
+
+ .contact {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 18px;
+     margin-top: 28px
+ }
+
+ form {
+     background: var(--card);
+     padding: 18px;
+     border-radius: 14px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05)
+ }
+
+ label {
+     display: block;
+     font-size: 13px;
+     color: var(--muted);
+     margin-bottom: 6px
+ }
+
+ input,
+ textarea {
+     width: 100%;
+     padding: 10px;
+     border-radius: 10px;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+     background: transparent;
+     color: inherit;
+     font-size: 14px
+ }
+
+ textarea {
+     min-height: 120px
+ }
+
+ .footer {
+     margin-top: 32px;
+     padding-top: 18px;
+     border-top: 1px dashed rgba(0, 0, 0, 0.08);
+     color: var(--muted);
+     display: flex;
+     justify-content: space-between;
+     align-items: center
+ }
+

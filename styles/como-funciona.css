@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.cabeçalho{
+
+    height: 30px;
+}
+
+.secao-faq {
+    padding: 60px 0;
+}
+
+.faq-cabecalho {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.icone-cabecalho {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    color: #1b3253;
+}
+
+.faq-cabecalho h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #212529;
+    margin: 0 0 15px 0;
+}
+
+.faq-cabecalho .subtitulo {
+    font-size: 18px;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.area-busca-filtros {
+    margin-bottom: 40px;
+}
+
+.campo-busca {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.campo-busca .icone-busca {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #adb5bd;
+}
+
+.campo-busca input {
+    width: 100%;
+    padding: 12px 12px 12px 45px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.filtros-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botao-filtro {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #495057;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-filtro:hover {
+    background-color: #e9ecef;
+}
+
+.botao-filtro.ativo {
+     background-color: #2a4368;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.lista-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item-faq {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    transition: margin 0.3s ease;
+}
+
+.item-faq[open] {
+    border-color: #949494b9;
+}
+
+.pergunta-faq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.pergunta-faq::-webkit-details-marker {
+    display: none;
+}
+
+.texto-pergunta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.texto-pergunta span:first-child {
+    font-size: 18px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.tag-categoria {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6c757d;
+    background-color: #f8f9fa;
+    padding: 3px 8px;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.icone-faq {
+    width: 12px;
+    height: 12px;
+    border-left: 2px solid #6c757d;
+    border-bottom: 2px solid #6c757d;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.item-faq[open] > .pergunta-faq .icone-faq {
+    transform: rotate(135deg);
+}
+
+.resposta-faq {
+    padding: 0 20px 20px 20px;
+    color: #495057;
+    line-height: 1.6;
+    border-top: 1px solid #e9ecef;
+}
+
+.resposta-faq p {
+    margin: 0;
+}
+
+
+.bloco-nao-encontrou {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.bloco-nao-encontrou h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #212529;
+    margin: 0 0 10px 0;
+}
+
+.bloco-nao-encontrou p {
+    color: #090d11;
+    margin: 0 0 25px 0;
+}
+
+.botoes-contato {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.botao-primario, .botao-secundario {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.botao-primario {
+    background-color: #2a3d58;
+    color: #ffffff;
+}
+.botao-primario:hover {
+    background-color: #162233;
+}
+
+.botao-secundario {
+    background-color: #ffffff;
+    color: #2a3d58;
+    border: 1px solid #2a3d58;
+}
+
+.botao-secundario:hover {
+    background-color: #f8f9fa;
+}

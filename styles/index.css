@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  color: #0f172a; 
+  background-color: #f1f5f9; 
+}
+
+.botao-voluntario {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.botao-voluntario:hover {
+  background-color: #1e40af; 
+}
+
+main {
+  padding: 32px;
+  display: flex;
+  height: 600px;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #b4c2e05e;
+}
+
+.texto-principal {
+  flex: 1 1 300px;
+  max-width: 600px;
+  font-family: "Inter", sans-serif;
+  margin-left: 50px;
+}
+
+.texto-principal h1 {
+  font-size: 54px;
+  margin-bottom: 8px;
+  font-weight: 900;
+  
+}
+
+.texto-principal h1 span {
+  color: #3055a5;
+}
+
+.texto-principal p {
+  margin-bottom: 24px;
+  font-size: 18px;
+  color: #475569; 
+}
+
+.botoes-principais {
+  display: flex;
+  gap: 16px;
+}
+
+.botao-ajuda {
+  background-color: #0d2252;
+  color: white;
+  font-family: "Inter", sans-serif;
+  height: 55px;
+  font-size: 15px;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.botao-ajuda:hover {
+  background-color: #1e40af;
+}
+
+.bold {
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.botao-se-voluntario {
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  height: 55px;
+  border: 1px solid #cbd5e1;
+  padding: 8px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+
+}
+
+.botao-se-voluntario:hover {
+  background-color: #f1f5f9;
+}
+
+.imagem-principal {
+  flex: 1 1 300px;
+  max-width: 600px;
+  background-color: #d0e9e4;
+  border-radius: 8px;
+}
+
+.imagem-principal img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+section.por-que-escolher {
+  padding: 48px 32px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  height: 450px;
+  background-color: white;
+}
+
+section.por-que-escolher h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+section.por-que-escolher p.introducao {
+  color: #64748b;
+  font-size: 20px;
+  max-width: 660px;
+  margin: 0 auto 32px auto;
+}
+
+.cartoes {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.cartao {
+  flex: 1 1 160px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  color: #334155;
+}
+
+.icone-cartao {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
+
+
+
+.cartao  {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.cartao p {
+  font-size: 14px;
+  color: #64748b;
+}
+.cartao:hover{
+
+  background-color: #d0d7e9;
+}
+
+section.chamada-acao {
+  background-color: #0e1b36;
+  color: white;
+  text-align: center;
+  padding: 48px 32px;
+}
+
+section.chamada-acao h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+section.chamada-acao p {
+  max-width: 600px;
+  margin: 0 auto 24px auto;
+  color: #cbd5e1;
+}
+
+section.chamada-acao button {
+  background-color: white;
+  color: #051435;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+section.chamada-acao button:hover {
+  background-color: #e0e7ff;
+}

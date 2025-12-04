@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+     <link rel="stylesheet" href="../styles/barra-nav.css">
+    <link rel="stylesheet" href="../styles/rodape.css">
+  <link rel="stylesheet" href="../styles/ser-voluntario.css">
+  <link rel="icon" href="../images/logo.png">
+  <title>Ser Voluntário</title>
+
+</head>
+<body>
+        <header class="cabeçalho">
+        <img class="logo-nav" src="../images/logo.png" alt="logo-nav">
+        <h2>Equilibramente</h2>
+        <nav class="navegação">
+            <ul>
+               <a href="/"><li>Início</li></a> 
+
+                <a href="/voluntarios"><li>Voluntários</li></a>
+
+              <a href="/agendar"><li>Agendar Consulta</li></a>  
+
+               <a href="/ser-voluntario"><li>Ser Voluntário</li></a> 
+
+               <a href="/artigos"><li>Artigos</li></a>
+
+                <a href="/como-funciona"><li>Como Funciona</li></a>
+
+                <a href="/sobre"><li>Sobre</li></a>
+            </ul>
+        </nav>
+    </header>
+
+
+
+<main class="container-voluntario">
+    <section class="formulario-voluntario">
+      <h1 class="titulo-principal">__TITULO__</h1>
+      <p class="subtitulo">Faça parte da nossa equipe e ajude pessoas que precisam de apoio emocional.</p>
+
+      <form action="gravar" method="post">
+        
+        <input type="hidden" name="id_voluntario" value="__ID__">
+
+        <div class="bloco-formulario">
+          <h2 class="titulo-bloco">Dados Pessoais</h2>
+          <div class="linha-formulario">
+            <div class="campo">
+              <label for="nome">Nome Completo</label>
+              <input type="text" id="nome" name="nome" value="__NOME__" required>
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" value="__EMAIL__" required>
+            </div>
+          </div>
+          <div class="linha-formulario">
+            <div class="campo">
+              <label for="telefone">Telefone</label>
+              <input type="text" id="telefone" name="telefone" value="__TELEFONE__">
+            </div>
+            <div class="campo">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade" value="__CIDADE__">
+            </div>
+          </div>
+        </div>
+
+        <div class="bloco-formulario">
+          <h2 class="titulo-bloco">Dados Profissionais</h2>
+          <div class="linha-formulario">
+            <div class="campo">
+              <label for="registro">Número de Registro (CRP/CRM)</label>
+              <input type="text" id="registro" name="registro" value="__REGISTRO__">
+            </div>
+            <div class="campo">
+              <label for="especialidade">Especialidade Principal</label>
+              <select id="especialidade" name="especialidade">
+                <option value="">Selecione...</option>
+                <option value="psicologia">Psicologia</option>
+                <option value="psiquiatria">Psiquiatria</option>
+                <option value="assistente-social">Assistência Social</option>
+              </select>
+            </div>
+          </div>
+          <div class="campo">
+            <label for="experiencia">Experiência Profissional</label>
+            <textarea id="experiencia" name="experiencia" rows="3">__EXPERIENCIA__</textarea>
+          </div>
+        </div>
+
+        <div class="bloco-formulario">
+          <h2 class="titulo-bloco">Áreas de Interesse</h2>
+          <div class="opcoes" style="display: flex; gap: 10px; flex-wrap: wrap;">
+             <label><input type="checkbox" name="area_interesse" value="Apoio Familiar"> Apoio Familiar</label>
+             <label><input type="checkbox" name="area_interesse" value="Psicologia Infantil"> Psicologia Infantil</label>
+             <label><input type="checkbox" name="area_interesse" value="Depressão"> Depressão</label>
+             <label><input type="checkbox" name="area_interesse" value="Ansiedade"> Ansiedade</label>
+          </div>
+        </div>
+
+        <div class="bloco-formulario">
+          <h2 class="titulo-bloco">Disponibilidade</h2>
+          <div class="linha-formulario">
+            <div class="campo">
+              <label for="dias">Dias da Semana</label>
+              <input type="text" id="dias" name="dias" value="__DIAS__">
+            </div>
+            <div class="campo">
+              <label for="horarios">Horários Disponíveis</label>
+              <input type="text" id="horarios" name="horarios" value="__HORARIOS__">
+            </div>
+          </div>
+        </div>
+
+        <div class="bloco-formulario">
+          <h2 class="titulo-bloco">Informações Adicionais</h2>
+          <div class="campo">
+            <label for="motivo">Por que quer ser voluntário?</label>
+            <textarea id="motivo" name="motivo" rows="3">__MOTIVO__</textarea>
+          </div>
+          <div class="campo">
+            <label for="observacoes">Informações extras</label>
+            <textarea id="observacoes" name="observacoes" rows="3">__OBSERVACOES__</textarea>
+          </div>
+        </div>
+
+        <div class="bloco-formulario">
+          <button type="submit" class="botao-enviar">Salvar</button>
+          <a href="listar" style="margin-left: 15px; text-decoration: none; color: #333;">Ver Lista</a>
+        </div>
+
+      </form>
+    </section>
+  </main>
+    <footer>
+  <div class="footer-content">
+    <div class="rodape-coluna">
+      <div class="rodape-titulo-com-icone">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icone-titulo"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        <h4>Equilibramente</h4>
+      </div>
+      <p>
+        Nossa missão é conectar pessoas que precisam de apoio psicológico com profissionais voluntários qualificados, oferecendo suporte emocional gratuito e acessível para todos.
+      </p>
+      <div class="redes-sociais">
+        <a href="#" aria-label="Facebook">
+          <svg class="rede-social-icone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg class="rede-social-icone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg class="rede-social-icone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="rodape-coluna">
+      <h4>Links Rápidos</h4>
+      <ul class="rodape-links">
+                    <li><a href="../index.html"">Início</a></li>
+                
+                    <li><a href="como-funciona.html">FAQ</a></li>
+                </ul>
+    </div>
+
+    <div class="rodape-coluna">
+      <h4>Contato</h4>
+      <ul class="rodape-contato">
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <a href="mailto:contato@apoiomental.org">contato@apoiomental.org</a>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>(18) 9999-9999</span>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>Presidente Prudente, SP</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Equilibramente. Todos os direitos reservados.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos de Uso</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
